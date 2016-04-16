@@ -1,5 +1,14 @@
-<h1>New Article</h1>
-
+<div id="wrapper">
+  <div id="main">
+    <h1>New Article</h1>
+   <nav><%= link_to "Home", root_path %>
+  <%= link_to "About", welcome_about_path %>
+  <%= link_to "Articles", articles_path %></nav>
+    <hr>
 <%= render 'form' %>
 
 <%= link_to 'Back', articles_path %>
+
+   
+  </div>
+</div>

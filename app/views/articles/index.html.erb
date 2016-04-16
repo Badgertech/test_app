@@ -1,7 +1,12 @@
+
+  <div id="main">
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Articles</h1>
-
+   <nav><%= link_to "Home", root_path %>
+  <%= link_to "About", welcome_about_path %>
+  <%= link_to "Articles", articles_path %></nav>
+    <hr>
 <table>
   <thead>
     <tr>
@@ -27,3 +32,5 @@
 <br>
 
 <%= link_to 'New Article', new_article_path %>
+    <footer>&copy2016 BadgerTex.com</footer>
+  </div>
